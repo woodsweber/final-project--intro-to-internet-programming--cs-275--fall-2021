@@ -97,6 +97,12 @@ let transpileJSForProd = () => {
         .pipe(dest(`prod/js`));
 };
 
+let copyUnprocessedAssetsForProd = () => {
+    return src([
+        `img`
+    ], {dot: true}).pipe(dest(`prod`));
+};
+
 let serve = () => {
     browserSync({
         notify: true,
