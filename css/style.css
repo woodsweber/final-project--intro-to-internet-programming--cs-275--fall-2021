@@ -1,5 +1,36 @@
 body {
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  padding: 15px 18px;
+  float: left;
+  vertical-align: middle;
+  width: 210px;
+  height: 250px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 10% auto;
+  justify-content: center;
+}
+
+h2 {
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+p {
+  white-space: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
 .slideshow {
@@ -7,7 +38,7 @@ body {
   flex-direction: row;
   overflow: hidden;
   width: 500px;
-  margin: 20% auto;
+  margin: 0 0% 0%;
 }
 
 .slide {
@@ -23,20 +54,7 @@ body {
   width: 290px;
 }
 
-img {
-  padding: 15px 18px;
-  float: left;
-  vertical-align: middle;
-  width: 210px;
-  height: 250px;
-}
-
-h2 {
-  vertical-align: top;
-  font-size: 20px;
-  font-weight: 100;
-}
-
-p {
-  white-space: normal;
+.arrow {
+  height: 50px;
+  margin: 100px 0% 0%;
 }
