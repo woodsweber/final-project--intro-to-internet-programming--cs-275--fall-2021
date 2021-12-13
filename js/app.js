@@ -4,12 +4,20 @@ window.onload = () => {
 
     let offset = 0;
 
+    let updateArrows = () => {
+        ARROWS[0].classList.remove(`hidden`);
+        ARROWS[1].classList.remove(`hidden`);
+        if(offset === 0) {ARROWS[0].classList.add(`hidden`);}
+        else if(offset === -2000) {ARROWS[0].classList.add(`hidden`);}
+    };
+
     let shiftRight = () => {
         if(offset < 0)
         {
             offset += 500;
             for(let slide of SLIDES) {slide.style.left = offset + `px`;}
         }
+        updateArrows();
     };
 
     let shiftLeft = () => {
@@ -18,6 +26,7 @@ window.onload = () => {
             offset -= 500;
             for(let slide of SLIDES) {slide.style.left = offset + `px`;}
         }
+        updateArrows();
     };
 
     ARROWS[0].addEventListener(`click`, shiftLeft);
