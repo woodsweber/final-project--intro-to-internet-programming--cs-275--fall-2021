@@ -47,6 +47,8 @@ p {
   display: flex;
   flex-direction: row;
   position: relative;
+  left: 0;
+  transition: left 1s;
 }
 
 .text {
