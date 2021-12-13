@@ -31,4 +31,9 @@ window.onload = () => {
 
     ARROWS[0].addEventListener(`click`, shiftLeft);
     ARROWS[1].addEventListener(`click`, shiftRight);
+
+    document.addEventListener(`keydown`, (k) => {
+        if (k.key === `ArrowLeft`) {shiftLeft();}
+        else if (k.key === `ArrowRight`) {shiftRight();}
+    });
 };
