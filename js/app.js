@@ -7,7 +7,7 @@ window.onload = () => {
     let updateArrows = () => {
         ARROWS[0].classList.remove(`hidden`);
         ARROWS[1].classList.remove(`hidden`);
-        if(offset === 0) {ARROWS[0].classList.add(`hidden`);}
+        if(offset === 0) {ARROWS[1].classList.add(`hidden`);}
         else if(offset === -2000) {ARROWS[0].classList.add(`hidden`);}
     };
 
