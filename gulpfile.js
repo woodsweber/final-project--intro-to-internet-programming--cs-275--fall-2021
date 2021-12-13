@@ -178,7 +178,8 @@ exports.serve = series(
 exports.build = series(
     compressCSS,
     compressHTML,
-    transpileJSForProd
+    transpileJSForProd,
+    copyUnprocessedAssetsForProd
 );
 
 exports.default = series(
