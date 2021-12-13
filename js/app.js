@@ -5,13 +5,19 @@ window.onload = () => {
     let offset = 0;
 
     let shiftRight = () => {
-        offset += 500;
-        for(let slide of SLIDES) {slide.style.left = offset + `px`;}
+        if(offset < 0)
+        {
+            offset += 500;
+            for(let slide of SLIDES) {slide.style.left = offset + `px`;}
+        }
     };
 
     let shiftLeft = () => {
-        offset -= 500;
-        for(let slide of SLIDES) {slide.style.left = offset + `px`;}
+        if(offset > -2000)
+        {
+            offset -= 500;
+            for(let slide of SLIDES) {slide.style.left = offset + `px`;}
+        }
     };
 
     ARROWS[0].addEventListener(`click`, shiftLeft);
