@@ -46,6 +46,7 @@ p {
   white-space: nowrap;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .text {
